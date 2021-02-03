@@ -19,7 +19,9 @@ class CuentaTest {
 
 	@Test
 	void testSetTitular() {
-		assertEquals("Andrés", ejemplo.getTitular());
+		Cuenta ejemplo2=new Cuenta("Pepe",2000);
+		ejemplo2.setTitular("Andrés");
+		assertEquals("Andrés", ejemplo2.getTitular());
 	}
 
 	@Test
@@ -29,7 +31,9 @@ class CuentaTest {
 
 	@Test
 	void testSetCuenta() {
-		assertEquals(3000, ejemplo.getCuenta());
+		Cuenta ejemplo2=new Cuenta("Pepe",2000);
+		ejemplo2.setCuenta(1000);
+		assertEquals(1000, ejemplo2.getCuenta());
 	}
 
 	@Test
